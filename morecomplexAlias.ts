@@ -26,3 +26,16 @@ const Jamima: Person = {
 
 }
 
+const Shawn: Person = {
+    name: "Shawn",
+    numbers: [ 1, 2, 3, 4],
+    foods: ["pizza", "steak", "grapes"],
+    pet: {
+        name: "Mikke",
+        type: "Snuffle-Pig",
+        age: 9
+
+    },
+    collection: ["Nip", "Nap", "Werp"]
+}
+

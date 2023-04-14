@@ -31,6 +31,8 @@ const myFunction = () => {
     console.log("something")
 }
 const myArray = [1, 2, 3]
+const newArray: string[] = ["one", "two", "three"] // works
+const nutherArray: string[] = [1 ,2 ,3] // wont work
 
 object = {
     value1: 55, // works

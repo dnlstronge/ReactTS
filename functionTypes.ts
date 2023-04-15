@@ -31,9 +31,17 @@ function insertAt<T>(array: T[], value: T) {
 }
 
 const demoArray = [1, 2, 3];
+const newDemoArray = ["dog", "goes", "bark"]
 
 const updatedArray = insertAt(demoArray, -1); // doesn't pick up that it's an array of numbers
 
 updatedArray[0].split("") // this would cause a runt-time error without <T>
 
-// nowTS understands that updatedArray will be an array of numbers 
+// now TS understands that updatedArray will be an array of numbers 
+
+// so if you called insertAt on strings TS would also recognise that for the same reasons as above; 
+
+ const newUpdatedArray = insertAt(newDemoArray, "alldaylong");
+ newUpdatedArray[0].split(""); // and this will work although nothing has changed really
+ // but TS was able to recognise both args as strings and act accortdingly
+

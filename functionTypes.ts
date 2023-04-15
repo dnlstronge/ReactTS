@@ -25,7 +25,7 @@ function printSomething(a: any) {
 
 /* GENERICS */
 
-function insertAt(array: any[], value: any) {
+function insertAt<T>(array: T[], value: T) {
   const newArray = [value, ...array];
   return newArray;
 }
@@ -33,3 +33,7 @@ function insertAt(array: any[], value: any) {
 const demoArray = [1, 2, 3];
 
 const updatedArray = insertAt(demoArray, -1); // doesn't pick up that it's an array of numbers
+
+updatedArray[0].split("") // this would cause a runt-time error without <T>
+
+// nowTS understands that updatedArray will be an array of numbers 

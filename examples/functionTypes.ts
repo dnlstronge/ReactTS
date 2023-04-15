@@ -43,5 +43,5 @@ const updatedArray = insertAt(demoArray, -1); // doesn't pick up that it's an ar
 
  const newUpdatedArray = insertAt(newDemoArray, "alldaylong");
  newUpdatedArray[0].split(""); // and this will work although nothing has changed really
- // but TS was able to recognise both args as strings and act accortdingly
+ // but TS was able to recognise both args as strings and act accordingly
 

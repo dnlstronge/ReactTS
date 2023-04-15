@@ -13,3 +13,15 @@ function addAgain(a: number, b: number): number {
   console.log(answer);
   return answer;
 }
+
+/*Functions generally have an input and an output, hence they have a return type */
+
+
+/*Demo void - comparable to null & undefined
+funtion never returns */
+
+function printSomething(a: any) {
+    console.log(a)
+}
+
+/* GENERICS */

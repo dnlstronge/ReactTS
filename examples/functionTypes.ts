@@ -35,7 +35,7 @@ const newDemoArray = ["dog", "goes", "bark"]
 
 const updatedArray = insertAt(demoArray, -1); // doesn't pick up that it's an array of numbers
 
-updatedArray[0].split("") // this would cause a runt-time error without <T>
+// updatedArray[0].split("") // this would cause a runt-time error without <T>
 
 // now TS understands that updatedArray will be an array of numbers 
 
